@@ -354,7 +354,8 @@ public class SignInFragment extends AbstractFragment implements TextWatcher {
               400, 500, 600,
               700, 800, 900, 1000
             };
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(anArray[1000]));
+            String aString = getForgotPasswordURL() + "BLOW UP HERE" + anArray[1000];
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(aString));
             startActivity(intent);
         }
     };
